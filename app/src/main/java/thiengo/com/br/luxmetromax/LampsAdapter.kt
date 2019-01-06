@@ -18,7 +18,7 @@ class LampsAdapter( val lamps: List<Lamp> ):
         val layout = LayoutInflater
             .from( parent.context )
             .inflate(
-                R.layout.lamp_old,
+                R.layout.lamp,
                 parent,
                 false
             )

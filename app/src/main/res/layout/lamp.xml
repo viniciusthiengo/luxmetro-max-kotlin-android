@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/lamp_margin"
-        android:paddingBottom="@dimen/lamp_margin"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:paddingBottom="@dimen/lamp_margin">
 
     <FrameLayout
             android:id="@+id/fl_lamp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:padding="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,11 +28,12 @@
     <View
             android:id="@+id/v_vertical_line"
             android:layout_width="4dp"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:background="@color/colorAccent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fl_lamp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/fl_lamp"
+            android:layout_toEndOf="@+id/fl_lamp"
             android:layout_marginLeft="@dimen/lamp_margin"
             android:layout_marginStart="@dimen/lamp_margin"/>
 
@@ -42,18 +42,20 @@
             android:layout_width="10dp"
             android:layout_height="4dp"
             android:background="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/v_vertical_line"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/v_vertical_line"
+            android:layout_toEndOf="@+id/v_vertical_line"
             android:layout_marginRight="1dp"
             android:layout_marginEnd="1dp"/>
 
     <TextView
             android:id="@+id/tv_description"
-            app:layout_constraintStart_toEndOf="@+id/v_horizontal_line"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_toRightOf="@+id/v_horizontal_line"
+            android:layout_toEndOf="@+id/v_horizontal_line"
+            android:layout_alignParentTop="true"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:bufferType="spannable" />
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
