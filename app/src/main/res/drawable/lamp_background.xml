@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
 
+    <!--
+        Definindo a cor de background do shape.
+    -->
     <solid android:color="@color/colorLampBackground" />
 
+    <!--
+        Definindo o nível de curvatura de borda do shape.
+    -->
     <corners android:radius="2dp" />
 
 </shape>

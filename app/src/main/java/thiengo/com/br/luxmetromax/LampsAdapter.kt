@@ -35,7 +35,8 @@ class LampsAdapter( val lamps: List<Lamp> ):
 
     override fun getItemCount() = lamps.size
 
-    inner class ViewHolder( itemView: View): RecyclerView.ViewHolder( itemView ){
+    inner class ViewHolder( itemView: View):
+        RecyclerView.ViewHolder( itemView ){
 
         val ivLamp: ImageView
         val tvDescription: TextView

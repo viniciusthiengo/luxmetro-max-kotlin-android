@@ -29,7 +29,7 @@ class LampsActivity : AppCompatActivity() {
     private fun initLampList(){
         rv_lamps.setHasFixedSize( false )
 
-        val layoutManager = LinearLayoutManager(this)
+        val layoutManager = LinearLayoutManager( this )
         rv_lamps.layoutManager = layoutManager
 
         val divider = DividerItemDecoration(
@@ -37,7 +37,10 @@ class LampsActivity : AppCompatActivity() {
             layoutManager.orientation
         )
         divider.setDrawable(
-            ContextCompat.getDrawable(this, R.drawable.divider_layout)!!
+            ContextCompat.getDrawable(
+                this,
+                R.drawable.divider_layout
+            )!!
         )
 
         rv_lamps.addItemDecoration( divider )
