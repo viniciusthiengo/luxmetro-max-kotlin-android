@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Com o DOCTYPE abaixo é possível referenciar strings
+    dentro do arquivo de strings.
+-->
+<!DOCTYPE resources [
+    <!ENTITY fontColor "#C7A500">
+]>
+<resources>
+    <string name="app_name">Luxímetro Max</string>
+
+    <string name="lights_activity_title">Tipos de lâmpadas</string>
+
+    <!--
+        Se nenhum tag Span, como <annotation>, for utilizada
+        dentro de <string> então getText() retorna uma String
+        ao invés de uma CharSequence. O método getString()
+        sempre retorna uma String, sem tags Span.
+    -->
+    <string name="lamp_led">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Díodos Emissores de Luz (LED):
+            </annotation>
+        </font>
+        são consideradas as lâmpadas
+        mais modernas – produto de última tecnologia. Convertem
+        energia elétrica diretamente em energia luminosa, através de
+        pequenos chips.
+    </string>
+
+    <string name="lamp_incandescent">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Lâmpadas Incandescentes:
+            </annotation>
+        </font>
+        são as lâmpadas mais antigas, que
+        todos nós já tivemos ou ainda temos em nossas casas. Por
+        terem baixa eficiência, estão sendo subsituídas pelas
+        lâmpadas fluorescentes.
+    </string>
+
+    <string name="lamp_halogen">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Lâmpadas Halógenas:
+            </annotation>
+        </font>
+        também são consideradas lâmpadas
+        incandescentes (uma corrente elétrica percorre um filamento
+        liberando calor e luz), mas por possuirem halogêneo (geralmente
+        bromo ou iodo) em sua constituição, são chamadas de lâmpadas
+        halógenas.
+    </string>
+
+    <string name="lamp_fluorescent">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Lâmpadas Fluorescentes:
+            </annotation>
+        </font>
+        são as mais conhecidas e indicadas para
+        o uso residencial e comercial, pois apresentam alta eficiência
+        e baixo consumo de energia.
+    </string>
+
+    <string name="lamp_hid">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Lâmpadas de Descarga (HID):
+            </annotation>
+        </font>
+        uma descarga (de alta pressão)
+        elétrica entre os eletrodos leva os componentes internos do
+        tubo de descarga a produzirem luz.
+    </string>
+</resources>

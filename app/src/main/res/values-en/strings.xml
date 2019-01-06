@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Com o DOCTYPE abaixo é possível referenciar strings
+    dentro do arquivo de strings.
+-->
+<!DOCTYPE resources [
+    <!ENTITY fontColor "#C7A500">
+]>
+<resources>
+    <string name="app_name">Luximeter Max</string>
+
+    <string name="lights_activity_title">Types of lamps</string>
+
+    <!--
+        Se nenhum tag Span, como <annotation>, for utilizada
+        dentro de <string> então getText() retorna uma String
+        ao invés de uma CharSequence. O método getString()
+        sempre retorna uma String, sem tags Span.
+    -->
+    <string name="lamp_led">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Light Emitting Diodes (LED):
+            </annotation>
+        </font>
+        they are considered the most modern lamps - product of
+        latest technology. They convert electricity directly
+        into light energy through small chips.
+    </string>
+
+    <string name="lamp_incandescent">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Incandescent Lamps:
+            </annotation>
+        </font>
+        they are the oldest lamps we have ever had or still have
+        in our homes. Because they have low efficiency, they are
+        being replaced by fluorescent lamps.
+    </string>
+
+    <string name="lamp_halogen">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Halogen Lamps:
+            </annotation>
+        </font>
+        they are also considered incandescent lamps (an electric
+        current runs through a filament releasing heat and light),
+        but because they have halogen (usually bromine or iodine)
+        in their constitution, they are called halogen lamps.
+    </string>
+
+    <string name="lamp_fluorescent">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Fluorescent Lamps:
+            </annotation>
+        </font>
+        they are the most known and indicated for residential and
+        commercial use, because they have high efficiency and low
+        energy consumption.
+    </string>
+
+    <string name="lamp_hid">
+        <font color="&fontColor;">
+            <annotation fontFamily="open_sans_condensed_bold">
+                Discharge Lamps (HID):
+            </annotation>
+        </font>
+        an electric discharge (high pressure) between the electrodes
+        leads the internal components of the discharge tube to
+        produce light.
+    </string>
+</resources>
