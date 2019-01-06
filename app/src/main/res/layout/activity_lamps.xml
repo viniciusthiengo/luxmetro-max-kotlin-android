@@ -27,7 +27,7 @@
         android:id="@+id/rv_lamps"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"/>
+        android:paddingLeft="@dimen/lamp_margin"
+        android:paddingRight="@dimen/lamp_margin"/>
 
 </android.support.design.widget.CoordinatorLayout>
