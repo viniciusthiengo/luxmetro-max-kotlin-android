@@ -1,4 +1,4 @@
-# Relógio Mundial Animado (Kotlin Android)
+# Luxímetro Max (Kotlin Android)
 
 Projeto Kotlin Android da segunda parte do artigo [Annotation Span Para Estilização de Texto no Android](https://www.thiengo.com.br/annotation-span-para-estilizacao-de-texto-no-android#title-11) do Blog [Thiengo.com.br](https://www.thiengo.com.br).
 
